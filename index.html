@@ -1,0 +1,118 @@
+---
+layout: default
+title: "home"
+permalink: /
+titleAfter: ...kids' club kampala.
+priority: 1.0
+---
+
+<style>
+  .hero {
+    --background-image: url("{{ page.background_image }}");
+    --texture-image: url("{{ page.texture_image }}");
+  }
+</style>
+<section class="m-0 hero">
+  <div
+    class="background-slider"
+    style="background-image: var(--background-image)"></div>
+  <div class="black-background"></div>
+  <div class="row m-0 align-items-center">
+    <div class="col-lg-6">
+      <h1 class="text-warning">Welcome to Kids Club Kampala (KCK)</h1>
+      <p class="text-white">
+        We are a Christian based charity organization founded in 2009 by three
+        friends; Sam, Olivia and Corrie registered in Uganda under NGO number
+        MIA/NB/2010/04/2497, in the United Kingdom and the Republic of Ireland.
+      </p>
+      <a href="/donate" class="btn btn-lg btn-gold">Donate Now</a>
+    </div>
+    <div class="col-lg-6 p-5 text-center">
+      <img src="images/logo.png" alt="w-50" class="w-50 mx-auto" />
+    </div>
+  </div>
+</section>
+
+<section class="about py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
+      neque eu eleifend tincidunt, tellus quam scelerisque libero, et dictum
+      risus purus ac tortor. Aenean ac ex at nibh mattis luctus sit amet vel
+      lacus. Nullam at ipsum in urna sollicitudin euismod.
+    </p>
+  </div>
+</section>
+
+<section class="programs py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Programs</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img
+          src="/assets/images/program-1.jpg"
+          alt="Program Image"
+          class="img-fluid rounded" />
+        <h3 class="mt-3">Program 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img
+          src="/assets/images/program-2.jpg"
+          alt="Program Image"
+          class="img-fluid rounded" />
+        <h3 class="mt-3">Program 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
+        </p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img
+          src="/assets/images/program-3.jpg"
+          alt="Program Image"
+          class="img-fluid rounded" />
+        <h3 class="mt-3">Program 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+      'url("/images/village.jpg")',
+      'url("/images/background2.jpg")',
+      'url("/images/background3.jpg")',
+    ];
+    let currentIndex = 0;
+    const slider = document.querySelector(".background-slider");
+
+    // Set the initial background image
+    slider.style.backgroundImage = images[currentIndex];
+
+    function changeBackground() {
+      currentIndex = (currentIndex + 1) % images.length;
+      slider.style.backgroundImage = images[currentIndex];
+    }
+
+    setInterval(changeBackground, 10000);
+
+    // GSAP animation example
+    gsap.from(".hero h1", {
+      duration: 1,
+      opacity: 0,
+      y: -50,
+      ease: "power2.out",
+      delay: 0.5,
+    });
+  });
+</script>

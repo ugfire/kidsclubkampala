@@ -1,0 +1,10 @@
+<ul class="list-unstyled">
+  {% for post in site.posts %}
+  <li>
+    <a class="text-primary" href="{{ post.url }}">
+      <h3 class="text-primary">{{ post.title }}</h3>
+    </a>
+    <p class="text-muted">{{ post.date | date: '%B %d, %Y' }}</p>
+  </li>
+  {% endfor %}
+</ul>
