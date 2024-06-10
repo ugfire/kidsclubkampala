@@ -6,113 +6,445 @@ titleAfter: ...kids' club kampala.
 priority: 1.0
 ---
 
-<style>
-  .hero {
-    --background-image: url("{{ page.background_image }}");
-    --texture-image: url("{{ page.texture_image }}");
-  }
-</style>
-<section class="m-0 hero">
-  <div
-    class="background-slider"
-    style="background-image: var(--background-image)"></div>
-  <div class="black-background"></div>
-  <div class="row m-0 align-items-center">
-    <div class="col-lg-6">
-      <h1 class="text-warning">Welcome to Kids Club Kampala (KCK)</h1>
-      <p class="text-white">
-        We are a Christian based charity organization founded in 2009 by three
-        friends; Sam, Olivia and Corrie registered in Uganda under NGO number
-        MIA/NB/2010/04/2497, in the United Kingdom and the Republic of Ireland.
-      </p>
-      <a href="/donate" class="btn btn-lg btn-gold">Donate Now</a>
-    </div>
-    <div class="col-lg-6 p-5 text-center">
-      <img src="images/logo.png" alt="w-50" class="w-50 mx-auto" />
-    </div>
-  </div>
-</section>
-
-<section class="about py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">About Us</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
-      neque eu eleifend tincidunt, tellus quam scelerisque libero, et dictum
-      risus purus ac tortor. Aenean ac ex at nibh mattis luctus sit amet vel
-      lacus. Nullam at ipsum in urna sollicitudin euismod.
-    </p>
-  </div>
-</section>
-
-<section class="programs py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Programs</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <img
-          src="/assets/images/program-1.jpg"
-          alt="Program Image"
-          class="img-fluid rounded" />
-        <h3 class="mt-3">Program 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
-        </p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img
-          src="/assets/images/program-2.jpg"
-          alt="Program Image"
-          class="img-fluid rounded" />
-        <h3 class="mt-3">Program 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
-        </p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img
-          src="/assets/images/program-3.jpg"
-          alt="Program Image"
-          class="img-fluid rounded" />
-        <h3 class="mt-3">Program 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          euismod, neque eu eleifend tincidunt, tellus quam scelerisque libero.
-        </p>
+<main class="main">
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+    <div class="container">
+      <div class="row gy-4">
+        <div
+          class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" class="display-1">
+            Welcome to Kids' Club Kampala
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="100" class="pt-3 paragraph">
+            We are a Christian-based charity organization founded in 2009 by
+            three friends; Sam, Olivia and Corrie registered in Uganda under NGO
+            number MIA/NB/2010/04/2497, in the United Kingdom and the Republic
+            of Ireland.
+          </p>
+          <div
+            class="d-flex flex-column flex-md-row"
+            data-aos="fade-up"
+            data-aos-delay="200">
+            <a href="#about" class="btn-get-started"
+              >Contact us <i class="bi bi-arrow-right"></i
+            ></a>
+            <a
+              href=""
+              class="glightbox btn-watch-video d-flex align-items-center justify-content-center ms-0 ms-md-4 mt-4 mt-md-0"
+              ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img
+            src="assets/img/hero-img.png"
+            class="img-fluid animated"
+            alt="" />
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- /Hero Section -->
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const images = [
-      'url("/images/village.jpg")',
-      'url("/images/background2.jpg")',
-      'url("/images/background3.jpg")',
-    ];
-    let currentIndex = 0;
-    const slider = document.querySelector(".background-slider");
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0 jazz">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center content"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="">
+            <h1 class="display-2 fw-bold">Who We Are</h1>
+            <p class="paragraph">
+              We are an award winning children’s charity, working with
+              underprivileged children and families in the slum areas of Kampala
+              the capital city of Uganda, to improve their livelihoods.
+            </p>
 
-    // Set the initial background image
-    slider.style.backgroundImage = images[currentIndex];
+            <div class="text-center text-lg-start">
+              <a
+                href="#"
+                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Contact us</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    function changeBackground() {
-      currentIndex = (currentIndex + 1) % images.length;
-      slider.style.backgroundImage = images[currentIndex];
-    }
+        <div
+          class="col-lg-6 d-flex align-items-center"
+          data-aos="zoom-out"
+          data-aos-delay="200">
+          <img src="images/team.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
 
-    setInterval(changeBackground, 10000);
+      <div class="row gx-0 jazz">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center content"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="">
+            <h1 class="display-2 fw-bold">What we do</h1>
+            <p class="paragraph">
+              We support the children's education, shelter, feeding and
+              technical skill acquisition.
+            </p>
 
-    // GSAP animation example
-    gsap.from(".hero h1", {
-      duration: 1,
-      opacity: 0,
-      y: -50,
-      ease: "power2.out",
-      delay: 0.5,
-    });
-  });
-</script>
+            <div class="text-center text-lg-start">
+              <a
+                href="#"
+                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Donate</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-6 d-flex align-items-center"
+          data-aos="zoom-out"
+          data-aos-delay="200">
+          <img src="images/Free-Transform.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="row gx-0 jazz">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center content"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="">
+            <h1 class="display-2 fw-bold">About Uganda</h1>
+            <p class="paragraph">
+              Called the Pearl of Africa by Winston Churchill in 1907; Uganda is
+              a landlocked country in East Africa whose diverse landscape
+              encompasses the snow-capped Rwenzori Mountains and immense Lake
+              Victoria. Its abundant wildlife includes chimpanzees as well as
+              rare birds. Remote Bwindi Impenetrable National Park is a renowned
+              mountain gorilla sanctuary. Murchison Falls National Park in the
+              northwest is known for its 43m-tall waterfall and wildlife such as
+              hippos.
+            </p>
+
+            <div class="text-center text-lg-start">
+              <a
+                href="#"
+                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Read More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-6 d-flex align-items-center"
+          data-aos="zoom-out"
+          data-aos-delay="200">
+          <img src="images/wildlife-uganda.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="row gx-0 jazz">
+        <div
+          class="col-lg-6 d-flex flex-column justify-content-center content"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="">
+            <h1 class="display-2 fw-bold">The Need</h1>
+            <p class="paragraph">
+              It is estimated that the population of Ugandans living in slums
+              was 54% as of 2021 by the World bank. Life isn’t easy here; there
+              are very high rates of unemployment, predominantly among young
+              people and women. Household incomes are unstable, and many
+              families survive on just one meal a day. 80% of Kampala’s slum
+              dwellers don’t have access to a toilet. Eight million children in
+              Uganda are vulnerable to harm and are at risk of abuse and
+              abandonment as a result of poverty.
+            </p>
+
+            <div class="text-center text-lg-start">
+              <a
+                href="#"
+                class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>How to help</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-lg-6 d-flex align-items-center"
+          data-aos="zoom-out"
+          data-aos-delay="200">
+          <img src="images/slum.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About Section -->
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
+            <div>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="100"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Children helped</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i
+              class="bi bi-journal-richtext color-orange flex-shrink-0"
+              style="color: #ee6c20"></i>
+            <div>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="3
+                "
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item d-flex align-items-center w-100 h-100">
+            <i
+              class="bi bi-people color-pink flex-shrink-0"
+              style="color: #bb0852"></i>
+            <div>
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="15"
+                data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Volunteers</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+      </div>
+    </div>
+  </section>
+  <!-- /Stats Section -->
+
+  <!-- Features Section -->
+
+  <!-- Team Section 
+  <section id="team" class="team section">
+  
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Team</h2>
+      <p>Our hard working team</p>
+    </div>
+ 
+
+    <div class="container">
+      <div class="row gy-4">
+        <div
+          class="col-lg-3 col-md-6 d-flex align-items-stretch"
+          data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <p>
+                Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+                corporis et voluptate.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div
+          class="col-lg-3 col-md-6 d-flex align-items-stretch"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Sarah Jhonson</h4>
+              <span>Product Manager</span>
+              <p>
+                Quo esse repellendus quia id. Est eum et accusantium pariatur
+                fugit nihil minima suscipit corporis. Voluptate sed quas
+                reiciendis animi neque sapiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div
+          class="col-lg-3 col-md-6 d-flex align-items-stretch"
+          data-aos="fade-up"
+          data-aos-delay="300">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <p>
+                Vero omnis enim consequatur. Voluptas consectetur unde qui
+                molestiae deserunt. Voluptates enim aut architecto porro
+                aspernatur molestiae modi.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+
+        <div
+          class="col-lg-3 col-md-6 d-flex align-items-stretch"
+          data-aos="fade-up"
+          data-aos-delay="400">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="" />
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <p>
+                Rerum voluptate non adipisci animi distinctio et deserunt amet
+                voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </section>
+Team Section -->
+
+  <!-- Clients Section -->
+  <section id="clients" class="clients section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Regulation</h2>
+      <p>We work with approval from established authorities<br /></p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 2,
+                "spaceBetween": 40
+              },
+              "480": {
+                "slidesPerView": 3,
+                "spaceBetween": 60
+              },
+              "640": {
+                "slidesPerView": 4,
+                "spaceBetween": 80
+              },
+              "992": {
+                "slidesPerView": 6,
+                "spaceBetween": 120
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <img src="images/kck.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/kck1.png" class="img-fluid" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/kck10-1.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/kck11.jpg" class="img-fluid" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/uganda-police-logo.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/unngo.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- /Clients Section -->
+
+  <!-- Contact Section -->
+  {% include contact.html %}
+  <!-- /Contact Section -->
+</main>
