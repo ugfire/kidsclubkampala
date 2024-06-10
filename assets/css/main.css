@@ -1,20 +1,13 @@
-/**
-* Template Name: FlexStart
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Updated: Jun 06 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-@font-face {
-  font-family: "revicons";
-  src: url(./../fonts/revicons.eot);
-  src: url(./../fonts/revicons.eot) format("embedded-opentype"),
-    url(./../fonts/revicons.woff) format("woff"),
-    url(./../fonts/revicons.ttf) format("truetype"),
-    url(./../images/revicons.svg) format("svg");
-  font-weight: normal;
+body,
+p,
+input,
+a {
+  font-family: "Chilanka", cursive !important;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  color: #000000;
 }
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -22,11 +15,12 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Chilanka", cursive, "Roboto", system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --heading-font: "Flavors", cursive;
+  --nav-font: "Pompiere", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -79,7 +73,10 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 900;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /*--------------------------------------------------------------
@@ -2832,12 +2829,7 @@ section,
 .bg-dark {
   background-color: #000000 !important;
 }
-h1,
-h2 {
-  font-family: "revicons" !important;
-  font-optical-sizing: auto;
-  font-weight: 900;
-}
+
 .jazz {
   margin-bottom: 150px;
 }
