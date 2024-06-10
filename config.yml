@@ -1,7 +1,7 @@
 title: Kids Club Kampala
 description: Making a Difference for Children in Uganda
 baseurl: "" # Set to "/your-github-username.github.io/" if using GitHub Pages
-url: "" # Your website's URL
+url: "https://kidsclubkampalaug.org/" # Your website's URL
 theme: null # No theme used, we'll use custom Bootstrap
 permalink: /:year/:month/:day/:title/ # Optional: Customize blog post permalink structure
 
