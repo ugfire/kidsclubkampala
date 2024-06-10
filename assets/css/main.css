@@ -19,8 +19,8 @@ a {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  --heading-font: "Flavors", cursive;
-  --nav-font: "Pompiere", sans-serif;
+  --heading-font: "Chelsea Market", system-ui;
+  --nav-font: "Chilanka", cursive;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
