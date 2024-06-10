@@ -2841,6 +2841,10 @@ h2 {
 .jazz {
   margin-bottom: 150px;
 }
+.jazzwhite {
+  margin-bottom: 150px;
+  background-color: #ffffff;
+}
 
 .blogslist li {
   margin: 5px 10px;
@@ -2850,4 +2854,8 @@ h2 {
 .blogslist li:hover {
   font-size: 150%;
   background-color: #ffe134;
+}
+.swal2-popup {
+  background-color: black !important;
+  color: white;
 }
