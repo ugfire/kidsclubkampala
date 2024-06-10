@@ -1,6 +1,5 @@
-<!-- _includes/post-list.html -->
 <div class="blog-list">
-  {% for post in site.posts %}
+  {% assign num_posts = 0 %} {% for post in site.posts %} {% if num_posts < 2 %}
   <a href="{{ post.url }}" class="hre">
     <div class="blog-post p-3 my-5 bg-light shadow-2">
       <img src="{{ post.image }}" class="img-fluid" alt="Blog Image" />
@@ -12,5 +11,5 @@
       ></a>
     </div>
   </a>
-  {% endfor %}
+  {% assign num_posts = num_posts | plus: 1 %} {% endif %} {% endfor %}
 </div>
