@@ -2841,3 +2841,13 @@ h2 {
 .jazz {
   margin-bottom: 150px;
 }
+
+.blogslist li {
+  margin: 5px 10px;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+}
+.blogslist li:hover {
+  font-size: 150%;
+  background-color: #ffe134;
+}

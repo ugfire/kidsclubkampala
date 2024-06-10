@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="card-title">{{ page.title }}</h1>
+                <p class="card-text post-meta">
+                  Date: {{ page.date | date: "%B %d, %Y" }}
+                </p>
+                <p class="card-text description">{{ page.description }}</p>
+              </div>
+              THIS IS A SINGLE BLOG
+            </div>
+            <div class="mt-4">{{ content }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
