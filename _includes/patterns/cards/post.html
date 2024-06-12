@@ -1,14 +1,15 @@
-<article class="  push">
-  <h3 class="p-0 py-3 m-0"><a href="{{include.data.url}}">{{include.data.title}}</a></h3>
-  <p>{{include.data.desc}}</p>
-</article>
-
-<p class="text-secondary btn-sm bg-warning">
-  <i> Written by <strong class="text-dark fw-light"> {{include.data.author}}</strong> </i>
-  <br>
-  <i class="text-dark"> On: <strong class="text-dark fw-light"> {{include.data.written-on}}</strong> </i>
-</p>
-<p>
-  <a href="{{include.data.url}} " class="btn btn-success">READ ARTICLE</a>
-</p>
+<div class="col-md-6">
+  <a href="{{ post.url }}" class="hre">
+    <div class="blog-post m-1 p-3 my-5 bg-light shadow-2">
+      <img src="{{ post.image }}" class="img-fluid" alt="Blog Image" />
+      <h2 class="fw-bold blogminititle">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <small class="post-date">{{ post.date | date: "%B %d, %Y" }}</small>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}" class="btn btn-lg btn-dark">
+        Read more <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </a>
 </div>

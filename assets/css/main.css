@@ -21,6 +21,8 @@ a {
     "Noto Color Emoji";
   --heading-font: "Chelsea Market", system-ui;
   --nav-font: "Chilanka", cursive;
+  --orange: #fecf1d;
+  --darkorange: #e5480a;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -73,7 +75,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: "Chelsea Market", system-ui;
+  font-family: "Chelsea Market", system-ui !important;
   font-weight: 900;
   font-optical-sizing: auto;
   font-style: normal;
@@ -843,7 +845,7 @@ section,
   display: flex;
   align-items: center;
   /*background: url(../img/hero-bg.png) top center no-repeat;*/
-  background-color: #fecf1d;
+  background-color: var(--orange);
   background-size: cover;
 }
 
@@ -2850,4 +2852,31 @@ section,
 .swal2-popup {
   background-color: black !important;
   color: white;
+}
+.pagetitle {
+  background-color: var(--orange);
+}
+
+.blogminititle a {
+  font-weight: bold;
+  color: var(--darkorange);
+  border-bottom: 2px solid var(--darkorange);
+  padding-bottom: 5px;
+}
+.blogminititle a:hover {
+  font-size: 90% !important;
+}
+.post-date {
+  font-size: 12px;
+  font-style: italic;
+}
+.backlink {
+  color: var(--darkorange);
+  text-decoration: underline;
+}
+.darkorange {
+  color: var(--darkorange);
+}
+.kckyellow {
+  background-color: var(--orange);
 }

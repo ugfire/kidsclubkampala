@@ -11,39 +11,39 @@
       content="This is a brief description of my first blog post." />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link
+      href="/assets/img/apple-touch-icon.png"
+      rel="apple-touch-icon" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
       rel="stylesheet" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
       rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
     <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet" />
     <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
+      href="/assets/vendor/aos/aos.css"
       rel="stylesheet" />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet" />
+    <link
+      href="/assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet" />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="/assets/css/main.css" rel="stylesheet" />
   </head>
-  <body></body>
 </html>
 
 
@@ -63,22 +63,22 @@
           <a href="/" class="active">Home<br /></a>
         </li>
         <li><a href="/#about">About</a></li>
-        <li><a href="blog">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li class="dropdown">
           <a href="#"
             ><span>Media</span>
             <i class="bi bi-chevron-down toggle-dropdown"></i
           ></a>
           <ul>
-            <li><a href="#">Photo Gallery</a></li>
+            <li><a href="/gallery">Photo Gallery</a></li>
             <li class="dropdown">
-              <a href="#"
+              <a
                 ><span>Documents</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="#">Newsletters</a></li>
-                <li><a href="#">Proposals</a></li>
+                <li><a href="/newsletters">Newsletters</a></li>
+                <li><a href="/proposals">Proposals</a></li>
               </ul>
             </li>
           </ul>
@@ -100,17 +100,31 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <div class="card">
-              <div class="card-body">
-                <h1 class="card-title">My First Blog Post</h1>
-                <p class="card-text post-meta">
-                  Date: March 10, 2024
-                </p>
-                <p class="card-text description">This is a brief description of my first blog post.</p>
-              </div>
-              THIS IS A SINGLE BLOG
-            </div>
-            <div class="mt-4"><p>Here is the rest of the post that will not be shown in the excerpt.</p>
+            <div class="mt-4"><main class="p-0 push2 mt-5 text-left p-md-5">
+  <div class="container-fluid">
+    <p class="ib push-1-2 py-3">
+      <a href="/blog" class="backlink">← See other articles</a>
+    </p>
+    <h1 class="text-left">My First Blog Post</h1>
+    <p class="text-dark push2p text-left">
+      <i>
+        Written by <strong class="fw-light lapocolor2"> </strong>
+      </i>
+      <i class="ms-3">
+        On:
+        <strong class="fw-light darkorange"> 2024-03-10 00:00:00 +0300</strong>
+      </i>
+    </p>
+    <p><img src="/images/background3.jpg" alt="" class="img-fluid" /></p>
+  </div>
+  <h1 class="py-3"></h1>
+  <div class="container-fluid text-dark"><p>Here is the rest of the post that will not be shown in the excerpt.</p>
+</div>
+
+  <p class="ib push-1-2 py-3">
+    <a href="/blog/" class="backlink">← See other articles</a>
+  </p>
+</main>
 </div>
           </div>
         </div>
@@ -206,8 +220,13 @@
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("qqJnbf812rTIUEALz");
+      })();
+    </script>
   </body>
 </html>
