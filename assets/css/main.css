@@ -2880,3 +2880,6 @@ section,
 .kckyellow {
   background-color: var(--orange);
 }
+.projecttitle {
+  background-color: var(--orange);
+}
