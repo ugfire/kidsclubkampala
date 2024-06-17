@@ -788,14 +788,14 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 98px;
+  scroll-margin-top: 28px;
   overflow: clip;
 }
 
 @media (max-width: 1199px) {
   section,
   .section {
-    scroll-margin-top: 56px;
+    scroll-margin-top: 16px;
   }
 }
 
@@ -2833,7 +2833,7 @@ section,
 }
 
 .jazz {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
 }
 .jazzwhite {
   margin-bottom: 150px;
@@ -2882,4 +2882,12 @@ section,
 }
 .projecttitle {
   background-color: var(--orange);
+}
+.where {
+}
+.shadow {
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+}
+.where {
+  padding: 10px;
 }
