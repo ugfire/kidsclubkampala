@@ -2891,3 +2891,16 @@ section,
 .where {
   padding: 10px;
 }
+
+.article h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 20px;
+}
+.article a {
+  padding: 10px 20px !important;
+  background-color: #141414 !important;
+  color: #ffffff;
+  border-radius: 3px;
+}
