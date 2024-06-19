@@ -2934,3 +2934,13 @@ textarea {
   font-style: normal;
   font-size: 20px !important;
 }
+.text-primary {
+  color: #6610f2 !important;
+}
+.bank-icon {
+  font-size: 200px !important;
+}
+.bankrow td {
+  background-color: #c12d2d !important;
+  color: #ffffff !important;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>donate | Kids Club Kampala</title>
+    <title>give | Kids Club Kampala</title>
     <meta
       name="description"
       content="" />
@@ -88,8 +88,8 @@
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="btn-getstarted flex-md-shrink-0" href="/donate"
-      >Donate <i class="bi bi-dollar"></i
+    <a class="btn-getstarted flex-md-shrink-0" href="/give"
+      >Give <i class="bi bi-dollar"></i
     ></a>
   </div>
 </header>
@@ -100,107 +100,74 @@
       <!-- Contact Section -->
 <section id="contact" class="contact section mt-5">
   <!-- Section Title -->
-  <div class="container mt-5" data-aos="fade-up">
-    <h2 class="my-5 text-center fw-bold display-1">Donate</h2>
-  </div>
+  <h1
+    data-aos="fade-up"
+    class="display-3 p-1 mt-0 text-center bg-dark text-light">
+    Give <i class="bi bi-currency-exchange text-light"></i>
+  </h1>
   <!-- End Section Title -->
 
   <div class="container" data-aos="fade-up">
     <div class="row gy-4">
       <div class="col-lg-6">
-        <img src="images/give.png" class="img-fluid" alt="" srcset="" />
+        <h1 class="text-center">
+          <i class="bi bi-bank bank-icon"></i>
+        </h1>
       </div>
 
       <div class="col-lg-6">
-        <form id="contact-form" class="php-email-form" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                placeholder="Your Name"
-                required="" />
-            </div>
-
-            <div class="col-md-6">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                placeholder="Your Email"
-                required="" />
-            </div>
-
-            <div class="col-md-12">
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                placeholder="Subject"
-                required="" />
-            </div>
-
-            <div class="col-md-12">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="6"
-                placeholder="Message"
-                required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
-              </div>
-
-              <button type="submit">Send Message</button>
-            </div>
-          </div>
-        </form>
+        <p class="paragraph p-3">
+          Please send your financial support to this account. Thank you and God
+          bless you.
+        </p>
+        <table class="table table-striped mt-3">
+          <tr class="bankrow">
+            <td class="fw-bold td text-danger">Absa Bank Uganda Ltd.</td>
+            <td>Kampala</td>
+          </tr>
+          <tr>
+            <td class="fw-bold td">SWIFT ADDRESS</td>
+            <td>BARCUGKX</td>
+          </tr>
+          <tr>
+            <td class="fw-bold td">ACCOUNT NAME</td>
+            <td>KIDS CLUB KAMPALA</td>
+          </tr>
+          <tr>
+            <td class="fw-bold td">ACCOUNT NUMBER</td>
+            <td>6003007195</td>
+          </tr>
+          <tr>
+            <td class="fw-bold td">BRANCH</td>
+            <td>Kampala Road</td>
+          </tr>
+          <tr>
+            <td class="fw-bold td">CONTACT</td>
+            <td>+256782939817</td>
+          </tr>
+        </table>
       </div>
-      <!-- End Contact Form -->
     </div>
   </div>
 </section>
-<!-- /Contact Section -->
 
-<script type="text/javascript">
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
+<script>
+  function toCamelCase(str) {
+    return str
+      .toLowerCase()
+      .split(" ")
+      .map((word, index) =>
+        index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+      )
+      .join(" ");
+  }
 
-      // Display loading message
-      document.querySelector(".loading").style.display = "block";
-      document.querySelector(".error-message").style.display = "none";
-      document.querySelector(".sent-message").style.display = "none";
-
-      // Get the form data
-      var templateParams = {
-        from_name: document.getElementsByName("name")[0].value,
-        from_email: document.getElementsByName("email")[0].value,
-        subject: document.getElementsByName("subject")[0].value,
-        message: document.getElementsByName("message")[0].value,
-      };
-
-      // Send the email
-      emailjs.send("service_4vizpnc", "template_xb6tyky", templateParams).then(
-        function (response) {
-          document.querySelector(".loading").style.display = "none";
-          document.querySelector(".sent-message").style.display = "block";
-        },
-        function (error) {
-          document.querySelector(".loading").style.display = "none";
-          document.querySelector(".error-message").style.display = "block";
-          document.querySelector(".error-message").innerHTML =
-            "Failed to send email. Please try again later.";
-        }
-      );
+  document.addEventListener("DOMContentLoaded", () => {
+    const tdElements = document.getElementsByClassName("td");
+    tdElements.forEach((td) => {
+      td.textContent = toCamelCase(td.textContent);
     });
+  });
 </script>
 
     
